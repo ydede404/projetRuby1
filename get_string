@@ -1,0 +1,15 @@
+def get_string(ri20min.rb)
+  data = ''
+  f = File.open(ri20min.rb, "r")
+  f.each_line do |line|
+    data += line
+  end
+  return data
+end
+
+##### MAIN #####
+
+xml_data = get_string 'v8.h'
+
+# print out the string
+puts xml_data
